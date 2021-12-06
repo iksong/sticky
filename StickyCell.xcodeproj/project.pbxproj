@@ -14,7 +14,18 @@
 		493FA9E92714712C00B7E065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 493FA9E82714712C00B7E065 /* Assets.xcassets */; };
 		493FA9EC2714712C00B7E065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493FA9EA2714712C00B7E065 /* LaunchScreen.storyboard */; };
 		493FA9F42714723E00B7E065 /* StickyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493FA9F32714723E00B7E065 /* StickyViewController.swift */; };
+		496AE21B275E68B000D472CB /* StickyCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496AE21A275E68B000D472CB /* StickyCellTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		496AE21C275E68B000D472CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 493FA9D42714712700B7E065 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 493FA9DB2714712700B7E065;
+			remoteInfo = StickyCell;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		493FA9DC2714712700B7E065 /* StickyCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickyCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,19 @@
 		493FA9EB2714712C00B7E065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		493FA9ED2714712C00B7E065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		493FA9F32714723E00B7E065 /* StickyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyViewController.swift; sourceTree = "<group>"; };
+		496AE218275E68B000D472CB /* StickyCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickyCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		496AE21A275E68B000D472CB /* StickyCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		493FA9D92714712700B7E065 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496AE215275E68B000D472CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				493FA9DE2714712700B7E065 /* StickyCell */,
+				496AE219275E68B000D472CB /* StickyCellTests */,
 				493FA9DD2714712700B7E065 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				493FA9DC2714712700B7E065 /* StickyCell.app */,
+				496AE218275E68B000D472CB /* StickyCellTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +90,14 @@
 				493FA9ED2714712C00B7E065 /* Info.plist */,
 			);
 			path = StickyCell;
+			sourceTree = "<group>";
+		};
+		496AE219275E68B000D472CB /* StickyCellTests */ = {
+			isa = PBXGroup;
+			children = (
+				496AE21A275E68B000D472CB /* StickyCellTests.swift */,
+			);
+			path = StickyCellTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +120,24 @@
 			productReference = 493FA9DC2714712700B7E065 /* StickyCell.app */;
 			productType = "com.apple.product-type.application";
 		};
+		496AE217275E68B000D472CB /* StickyCellTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496AE21E275E68B000D472CB /* Build configuration list for PBXNativeTarget "StickyCellTests" */;
+			buildPhases = (
+				496AE214275E68B000D472CB /* Sources */,
+				496AE215275E68B000D472CB /* Frameworks */,
+				496AE216275E68B000D472CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				496AE21D275E68B000D472CB /* PBXTargetDependency */,
+			);
+			name = StickyCellTests;
+			productName = StickyCellTests;
+			productReference = 496AE218275E68B000D472CB /* StickyCellTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -97,11 +145,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					493FA9DB2714712700B7E065 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					496AE217275E68B000D472CB = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 493FA9DB2714712700B7E065;
 					};
 				};
 			};
@@ -119,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				493FA9DB2714712700B7E065 /* StickyCell */,
+				496AE217275E68B000D472CB /* StickyCellTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +184,13 @@
 				493FA9EC2714712C00B7E065 /* LaunchScreen.storyboard in Resources */,
 				493FA9E92714712C00B7E065 /* Assets.xcassets in Resources */,
 				493FA9E72714712700B7E065 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496AE216275E68B000D472CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +208,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		496AE214275E68B000D472CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496AE21B275E68B000D472CB /* StickyCellTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		496AE21D275E68B000D472CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 493FA9DB2714712700B7E065 /* StickyCell */;
+			targetProxy = 496AE21C275E68B000D472CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		493FA9E52714712700B7E065 /* Main.storyboard */ = {
@@ -342,6 +418,52 @@
 			};
 			name = Release;
 		};
+		496AE21F275E68B000D472CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5KLJKY3T39;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iksong.StickyCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickyCell.app/StickyCell";
+			};
+			name = Debug;
+		};
+		496AE220275E68B000D472CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5KLJKY3T39;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iksong.StickyCellTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StickyCell.app/StickyCell";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +481,15 @@
 			buildConfigurations = (
 				493FA9F12714712C00B7E065 /* Debug */,
 				493FA9F22714712C00B7E065 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		496AE21E275E68B000D472CB /* Build configuration list for PBXNativeTarget "StickyCellTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496AE21F275E68B000D472CB /* Debug */,
+				496AE220275E68B000D472CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
